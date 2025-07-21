@@ -21,14 +21,3 @@ L’objectif est de comprendre la gestion des arguments variables, la mise en fo
 
 3. **Écriture**
    - Affichage via `write()` directement sur la sortie standard.
-
----
-
-## 📂 Arborescence du projet
-```bash
-ft_printf/
-│── ft_printf.h
-│── ft_printf.c
-│── utils/
-│── Makefile
-└── README.md
