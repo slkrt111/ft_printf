@@ -1,48 +1,34 @@
 # 🖨️ ft_printf
 
-**ft_printf** est un projet de l'école 42 qui consiste à recréer la fonction `printf` du langage C.  
-L'objectif est de maîtriser la gestion des arguments variables, la manipulation des chaînes et le formatage des sorties, tout en respectant un comportement identique à la fonction originale.
+## 📖 Description
+**ft_printf** est un projet de l'école 42 dont le but est de recréer une version personnalisée de la fonction `printf` de la bibliothèque standard C.  
+L’objectif est de comprendre la gestion des arguments variables, la mise en forme des chaînes de caractères, et d’apprendre à manipuler des conversions complexes.
 
 ---
 
-## 📑 Sommaire
-- [📘 Description](#-description)
-- [⚙️ Fonctionnalités](#-fonctionnalités)
-- [📂 Structure du projet](#-structure-du-projet)
-- [💻 Compilation et Utilisation](#-compilation-et-utilisation)
-- [📋 Aperçu des Conversions](#-aperçu-des-conversions)
-- [🔗 Ressources](#-ressources)
+## 🧩 Fonctionnalités
+1. **Conversion de base**
+   - `%c` : Affiche un caractère.  
+   - `%s` : Affiche une chaîne de caractères.  
+   - `%p` : Affiche un pointeur au format hexadécimal (préfixé de `0x`).  
+   - `%d` / `%i` : Affiche un entier signé en base 10.  
+   - `%u` : Affiche un entier non signé en base 10.  
+   - `%x` / `%X` : Affiche un entier non signé en base 16 (en minuscules ou majuscules).  
+   - `%%` : Affiche le caractère `%`.  
+
+2. **Gestion des arguments variables**
+   - Utilisation de `va_list`, `va_start`, `va_arg` et `va_end` pour récupérer les arguments.  
+
+3. **Écriture**
+   - Affichage via `write()` directement sur la sortie standard.
 
 ---
 
-## 📘 Description
-
-Le projet **ft_printf** consiste à implémenter une version personnalisée de la fonction `printf` standard, capable de formater et d’afficher du texte, des nombres et d’autres types de données.  
-Une fois complété, il peut être utilisé comme une alternative portable à `printf` dans des projets C.
-
----
-
-## ⚙️ Fonctionnalités
-
-- 🔧 Gestion des **arguments variadiques** avec `va_list`  
-- 🧵 Support des conversions classiques de `printf`  
-- 📜 Affichage formaté (chaînes, entiers, hexadécimaux, pointeurs)  
-- 📚 Base réutilisable dans d'autres projets (par ex. **so_long**, **pipex**, etc.)
-
----
-
-## 📂 Structure du projet
-
-Le projet est organisé en plusieurs parties :  
-- **ft_printf.c** – Point d’entrée principal contenant la fonction `ft_printf`.  
-- **utils/** – Fonctions utilitaires (conversion en hexadécimal, affichage de nombres, etc.).  
-- **includes/** – Contient le fichier d’en-tête `ft_printf.h`.  
-
----
-
-## 💻 Compilation et Utilisation
-
-Pour compiler la bibliothèque, exécutez la commande :  
-
+## 📂 Arborescence du projet
 ```bash
-make
+ft_printf/
+│── ft_printf.h
+│── ft_printf.c
+│── utils/
+│── Makefile
+└── README.md
