@@ -1,23 +1,53 @@
-# 🖨️ ft_printf
-
-## 📖 Description
-**ft_printf** est un projet de l'école 42 dont le but est de recréer une version personnalisée de la fonction `printf` de la bibliothèque standard C.  
-L’objectif est de comprendre la gestion des arguments variables, la mise en forme des chaînes de caractères, et d’apprendre à manipuler des conversions complexes.
+#  ft_printf
 
 ---
 
-## 🧩 Fonctionnalités
-1. **Conversion de base**
-   - `%c` : Affiche un caractère.  
-   - `%s` : Affiche une chaîne de caractères.  
-   - `%p` : Affiche un pointeur au format hexadécimal (préfixé de `0x`).  
-   - `%d` / `%i` : Affiche un entier signé en base 10.  
-   - `%u` : Affiche un entier non signé en base 10.  
-   - `%x` / `%X` : Affiche un entier non signé en base 16 (en minuscules ou majuscules).  
-   - `%%` : Affiche le caractère `%`.  
+##  Description
 
-2. **Gestion des arguments variables**
-   - Utilisation de `va_list`, `va_start`, `va_arg` et `va_end` pour récupérer les arguments.  
+**ft_printf** is a 42 school project where the goal is to recode a personalized version of the `printf` function from the standard C library. The main objective is to understand variadic arguments (functions that take a variable number of arguments) and master string formatting and base conversions.
 
-3. **Écriture**
-   - Affichage via `write()` directement sur la sortie standard.
+---
+
+##  Features
+
+### 1. Conversions
+
+* %c : Prints a single character.
+* %s : Prints a string.
+* %p : Prints a pointer address in hexadecimal format (prefixed with 0x).
+* %d / %i : Prints a signed decimal integer.
+* %u : Prints an unsigned decimal integer.
+* %x : Prints an unsigned hexadecimal integer (lowercase).
+* %X : Prints an unsigned hexadecimal integer (uppercase).
+* %% : Prints a percent sign.
+
+### 2. Variadic Arguments
+
+* Usage of va_list, va_start, va_arg, and va_end to retrieve and process a variable number of parameters.
+
+### 3. Writing
+
+* Output is handled using the write() system call to display characters on the standard output.
+
+---
+
+##  Installation
+
+### 1. Clone the repository
+
+git clone [https://github.com/slkrt111/ft_printf.git](https://www.google.com/search?q=https://github.com/slkrt111/ft_printf.git)
+cd ft_printf
+
+### 2. Compilation
+
+The project compiles into a static library libftprintf.a using the Makefile:
+make
+
+---
+
+##  Technical Implementation
+
+* Language: C
+* Compiler: cc (with -Wall -Wextra -Werror)
+* Memory Management: No memory leaks, efficient handling of data types.
+* Standards: Compliant with the 42 School Norminette.
